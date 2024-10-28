@@ -123,6 +123,10 @@ h3 {
     align-items: center;
   }
   .gallery {
-    grid-template-columns: repeat(3, 1fr); /* 3 images per row on smaller screens */
-  }
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 images per row on smaller screens */
+  grid-gap: 5px; /* Gap between images */
+  width: 100%;
+  margin: 0 auto; /* Center the gallery */
+}
 }
