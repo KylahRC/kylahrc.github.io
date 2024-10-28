@@ -88,8 +88,8 @@ color:black;
 font-size: 15px;
 }
 
-/* Media query for screens with a max-width of 960px */
-@media screen and (max-width: 960px) {
+/* Media query for screens with a max-width of 1080px */
+@media screen and (max-width: 1080px) {
   h1, h2, h3 {
     color: #ac964b;
     margin: 4px 0 0 22px; /* Ensure margin is within the selector */
