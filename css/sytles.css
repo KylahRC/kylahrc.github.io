@@ -108,7 +108,7 @@ font-size: 15px;
   .container {
     padding: 10px; /* Add padding to container elements */
   }
-  .nav {
+  .navbar {
     display: flex;
     flex-direction: column; /* Stack navigation items vertically */
     align-items: center;
