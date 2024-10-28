@@ -45,6 +45,13 @@ h3 {
 
 }
 
+#logo
+{
+  background-color: #ffffff;
+  margin-top: -10px;
+  margin-bottom: -4px;
+}
+
 .navbar {
   background-color: #ac964b;
   padding-top: 20px;
@@ -145,4 +152,11 @@ h3 {
     display: block;
     margin: 1px;
   }
+
+  #logo
+{
+  background-color: #ffffff;
+  margin-top: -15px;
+  margin-bottom: -4px;
+}
 }
