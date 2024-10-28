@@ -48,11 +48,10 @@ h3 {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust columns based on screen size */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 5px; /* Gap between images */
   width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin: 0 auto; /* Center the gallery */
 }
 
 .gallery img {
