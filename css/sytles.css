@@ -88,21 +88,29 @@ color:black;
 font-size: 15px;
 }
 
-/*media query */
-@media screen and (max-width:960px){
-h1 {
-  color:#ac964b;
-}
-
-h2 {
-  color:#ac964b;
-}
-
-h3 {
-  color:#ac964b;
-}
-
-margin: 4px 0 0 22px;
-
-  
+/* Media query for screens with a max-width of 960px */
+@media screen and (max-width: 960px) {
+  h1, h2, h3 {
+    color: #ac964b;
+    margin: 4px 0 0 22px; /* Ensure margin is within the selector */
+  }
+  body {
+    padding: 10px; /* Add padding to the body for better spacing */
+  }
+  p {
+    font-size: 16px; /* Adjust paragraph font size for readability */
+    line-height: 1.5; /* Improve line spacing */
+  }
+  img {
+    max-width: 100%; /* Make images responsive */
+    height: auto;
+  }
+  .container {
+    padding: 10px; /* Add padding to container elements */
+  }
+  .nav {
+    display: flex;
+    flex-direction: column; /* Stack navigation items vertically */
+    align-items: center;
+  }
 }
