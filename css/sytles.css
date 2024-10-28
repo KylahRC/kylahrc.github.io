@@ -48,7 +48,7 @@ h3 {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(4, 1fr); /* 4 images per row on regular screens */
   grid-gap: 5px; /* Gap between images */
   width: 100%;
   margin: 0 auto; /* Center the gallery */
@@ -59,6 +59,22 @@ h3 {
   height: auto;
   display: block;
   margin: 5px;
+}
+
+/* Utility class to adjust image sizes */
+.img-small {
+  width: 200px;
+  height: auto;
+}
+
+.img-medium {
+  width: 400px;
+  height: auto;
+}
+
+.img-large {
+  width: 600px;
+  height: auto;
 }
 
 .footer {
@@ -105,5 +121,8 @@ h3 {
     display: flex;
     flex-direction: column; /* Stack navigation items vertically */
     align-items: center;
+  }
+  .gallery {
+    grid-template-columns: repeat(3, 1fr); /* 3 images per row on smaller screens */
   }
 }
