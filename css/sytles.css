@@ -94,6 +94,7 @@ font-size: 15px;
     color: #ac964b;
     margin: 4px 0 0 22px; /* Ensure margin is within the selector */
   }
+  
   body {
     padding: 10px; /* Add padding to the body for better spacing */
   }
