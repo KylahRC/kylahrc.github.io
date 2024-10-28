@@ -39,7 +39,7 @@ h3 {
 }
 
 .logo {
-  
+  background-color: #ffffff;
   margin-top: -10px;
   margin-bottom: -4px;
 
@@ -134,6 +134,7 @@ h3 {
   }
 
   .logo {
+    background-color: #ffffff;
     margin-top: -18px;
     margin-bottom: -4px;
   }
