@@ -4,37 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="min-width=1024px">
-    <meta name="keywords" content="braids, hair, hairstyles, Nicole braids, Nicole">
+    <meta name="keywords" content="braids, hair, hairstyles, Nicole braids, Nicole,">
     <title>Contact Us</title>
     <link rel="stylesheet" href="css/sytles.css">
+
     <script>
-        function validateInputPresent() {
+        function validateInputPresent() 
+        {
             var fullName = document.getElementById('fullNameInput').value;
             var email = document.getElementById('emailInput').value;
             var phoneNumber = document.getElementById('phoneNumberInput').value;
-            var message = document.getElementById('bookingInput').value;
-            if (fullName == "" || email == "" || phoneNumber == "" || message == "") {
-                alert("Please fill out all required fields.");
-                return false; // Prevents form submission
-            }
+            var message = document.getElementById('messageInput').value;
 
-            // If all fields are filled out, return true allowing form submission
-            return true;
-        }
-        function clearInitialValue(input) {
-            if (input.defaultValue == input.value) {
-                input.value = "";
-            }
+            if (fullName == "")
+                document.getElementById('fullNameInput').style.backgroundColor = 'lemonchiffon';
+            else if (fullName != "")
+                document.getElementById('fullNameInput').style.backgroundColor = 'white';
+
+            if (email == "")
+                document.getElementById('emailInput').style.backgroundColor = 'lemonchiffon';
+            else if (email != "")
+                document.getElementById('emailInput').style.backgroundColor = 'white';
+
+            if (phoneNumber == "")
+                document.getElementById('phoneNumberInput').style.backgroundColor = 'lemonchiffon';
+            else if (phoneNumber != "")
+                document.getElementById('phoneNumberInput').style.backgroundColor = 'white';
+
+            if
+                (message == "")
+                document.getElementById('messageInput').style.backgroundColor = 'lemonchiffon';
+            else if (message != "")
+                document.getElementById('messageInput').style.backgroundColor = 'white';
         }
     </script>
 </head>
 
 <body>
-    <div class="logo" id="logo">
+    <div class="logo">
         <a href="homePage.html">
-          <img src="images/Nicole logo.jpg" alt="Your Image" width=20%>
+            <img src="images/NoBGLogo.png" alt="Your Image" width=20%>
         </a>
-      </div>
+    </div>
+
     <div class="navbar">
         <a href="homePage.html">Home</a>
         <a href="aboutUs.html">About Us</a>
@@ -44,46 +56,56 @@
         <a href="contactForm.html">Contact Form</a>
     </div>
     <center>
-        <div style="width: 300px; contain: content;">
-            <h1>Submit a request</h1>
-            <form action="mailto:example@example.com" method="post" onsubmit="return validateInputPresent()">
-                <table>
-                    <tr>
-                        <td><label>Full Name</label></td>
-                        <td><input type="text" id="fullNameInput" value="Enter your full name"
-                                onclick="clearInitialValue(this)"></td>
-                    </tr>
-                    <tr>
-                        <td><label>Email</label></td>
-                        <td><input type="email" id="emailInput" value="Enter your email"
-                                onclick="clearInitialValue(this)"></td>
-                    </tr>
-                    <tr>
-                        <td><label>Phone Number</label></td>
-                        <td><input type="tel" id="phoneNumberInput" value="Enter your phone number"
-                                onclick="clearInitialValue(this)"></td>
-                    </tr>
-                    <tr>
-                        <td><label>Booking details</label></td>
-                        <td><input type="text" id="bookingInput" value="Enter booking details"
-                                onclick="clearInitialValue(this)"></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <center><button type="submit">SUBMIT</button></center>
-                        </td>
-                    </tr>
-                </table>
-            </form>
+        <div style="width: 300px;contain: content;">
+            <h1>Contact Us</h1>
+            <table>
+                <tr>
+                    <td>
+                        <lable>Full Name</lable>
+                    </td>
+                    <td>
+                        <input type="text" id="fullNameInput">
+                    </td>
+                <tr>
+                    <td>
+                        <lable>Email</lable>
+                    </td>
+                    <td>
+                        <input type="email" id="emailInput">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable>Phone Number</lable>
+                    </td>
+                    <td>
+                        <input type="number" id="phoneNumberInput">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <lable>Message</lable>
+                    </td>
+                    <td>
+                        <input type="text" id="messageInput">
+                    </td>
+                </tr>
+                <tr>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <center><button onclick="validateInputPresent()">SUBMIT</button></center>
+                    </td>
+                </tr>
+            </table>
         </div>
-        <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSeXzzXAfDzy_-GkcFnB0Xxpq_FOCHPQds58y7mJiPUSaiwYgA/viewform?embedded=true"
-            width="640" height="1021" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </center>
-    <footer class="footer">
-        <p>© 2024 | BraidsByNicole | All rights reserved | Designed by Janika & Kylah</p>
-        <p><a href="#">Back to top</a></p>
-    </footer>
 </body>
+<footer class="footer">
+    <p>&copy 2024| BraidsByNicole | All rights reserved | Designed by Janika & Kylah</p>
+    <p>
+        <a href="#">Back to top</a>
+    </p>
+</footer>
 
 </html>
