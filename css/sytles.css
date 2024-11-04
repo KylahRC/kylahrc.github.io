@@ -1,0 +1,183 @@
+.active {
+  background-color: #ffff;
+}
+
+
+.navbar{
+font-size: 16px;
+font-family: Parisienne, handwriting;
+letter-spacing: 1px;
+
+}
+
+.navbar a {
+color: white;
+text-decoration: none;
+padding: 8px;
+
+}
+
+
+body{
+text-align: center;
+font-family: Nunito;
+font-size: 15px;  
+line-height:1.5em;
+}
+
+h1{
+font-family: Parisienne, handwriting;
+font-size: 40px;
+ line-height:1.5em;
+}
+
+h2{  
+font-family: Parisienne, handwriting;
+font-size: 30px;
+ line-height:1.5em;
+
+}
+
+h3 {
+font-family: Parisienne, handwriting;
+font-size: 22px;
+ line-height:1.5em;
+}
+
+.logo{
+margin-top:-50px;
+}
+
+.navbar{
+background-color: #ac964b;
+padding-top:20px;
+padding-bottom:20px;
+width: 100%;
+}
+
+.gallery {
+display: grid;
+grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns */  ;
+grid-gap: 5px; /* Gap between images */
+width: 80%;
+padding-left: 10%;
+padding-right: 10%;
+}
+
+.gallery img {
+width: 100%;
+height: auto;
+display: block;
+margin: 5px;
+}
+
+
+.footer {
+padding: 10px 10px;
+color: #ffffff;
+text-align: center;
+background-color: #ac964b;
+letter-spacing: 1px;
+margin-bottom: 10px;
+font-size: 11px;
+}
+
+.footer p:last-child {
+margin-bottom: 0px;
+}
+
+.footer p a{
+float: center;
+color:black;
+font-size: 15px;
+}
+
+button *{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Nunito;
+color: white;
+text-decoration: none;
+
+}
+
+
+.container{
+width:100%;
+display: flex;
+text-align: center;
+align-items: center;
+justify-content: center;
+}
+
+button {
+border: none;
+color: white;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 14px;
+margin: 2px 2px;
+cursor: pointer;
+background-color: #ac964b;
+color: white;
+border: 2px solid #ac964b;
+}
+
+
+form{
+background:#fff;
+display: flex;
+flex-direction: column;
+padding: 2vw 4vw;
+width: 80%;
+max-width: 80%;
+border-radius: 10px;
+}
+
+form h3{
+color: #555;
+font-weight: 800;
+margin-bottom: 20px;
+}
+
+form input, form textarea{
+border: 0;
+margin: 10px 0;
+padding: 20px;
+outline: none;
+background: #f5f5f5;
+font-size: 14px;
+}
+
+form button{
+padding: 15px;
+background: #ac964b;
+color: #fff;
+font-size: 14px;
+border: 0;
+outline: none;
+cursor: pointer;
+width: 120px;
+margin: 15px auto 0;
+}
+
+
+/*media query */
+@media screen and (max-width:960px){
+h1 {
+  color:#ac964b;
+}
+
+h2 {
+  color:#ac964b;
+}
+
+h3 {
+  color:#ac964b;
+}
+margin:4px 0 0 22px;
+  
+}
